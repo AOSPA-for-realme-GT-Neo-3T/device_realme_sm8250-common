@@ -65,6 +65,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
+# Dolby Manager
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
