@@ -66,6 +66,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
 # Dolby Manager
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
+    $(LOCAL_PATH)/configs/audio/Dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml
+
 PRODUCT_PACKAGES += \
     DolbyManager
 
